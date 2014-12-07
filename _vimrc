@@ -138,22 +138,28 @@ if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
-
+call neobundle#begin(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/vimproc'
 
+" Install Powerline
+NeoBundle 'Lokaltog/vim-powerline'
+
+
+
+call neobundle#end()
 filetype plugin indent on     " Required!
 NeoBundleCheck
 
 
 """""""""""""""""""""""""""""""""""""""""""
-" Settings for vim-powerline
+" Settings for Powerline
 """""""""""""""""""""""""""""""""""""""""""
-"" cd ~/.vim/bundle
-"" git clone git://github.com/Lokaltog/vim-powerline.git
+set t_Co=256
+let g:Powerline_symbols = 'compatible' "compatible unicode fancy
+let g:Powerline_stl_path_style = 'relative' "filename short relative full
 set laststatus=2
 
 " settings for ctrlp
