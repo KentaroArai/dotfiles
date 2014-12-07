@@ -18,15 +18,8 @@ set backspace=indent,eol,start
 
 "if has("vms")
 set nobackup		" do not keep a backup file, use versions instead
-set nobackup
 set nowritebackup
 set noswapfile
-
-if has("vms")
-else
-  set backup		" keep a backup file (restore to previous version)
-  set undofile		" keep an undo file (undo changes after closing)
-endif
 set history=700		" keep 700 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
