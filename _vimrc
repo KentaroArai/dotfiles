@@ -90,12 +90,17 @@ if !exists(":DiffOrig")
 endif
 
 """""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""
 " Following is the Karai original settings
 """""""""""""""""""""""""""""""""""""""""""
-
+"""""""""""""""""""""""""""""""""""""""""""
 " Rebind <Leader> key
 let mapleader = ","
 
+
+"""""""""""""""""""""""""""""""""""""""""""
+" Window movement mapping
+"""""""""""""""""""""""""""""""""""""""""""
 " bind Ctrl+<movement> keys to move arouund the windows, instead of using Ctrl + w + <movement>
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -125,7 +130,13 @@ vnoremap > >gv  " better indentation
 "" call pathogen#infect()
 
 
+"""""""""""""""""""""""""""""""""""""""""""
+" Settings for NeoBundle
+""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""
 " Settings for vim-powerline
+"""""""""""""""""""""""""""""""""""""""""""
 "" cd ~/.vim/bundle
 "" git clone git://github.com/Lokaltog/vim-powerline.git
 set laststatus=2
