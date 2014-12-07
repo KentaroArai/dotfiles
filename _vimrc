@@ -3,11 +3,6 @@
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
 " Last change:	2014 Feb 05
 "
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -101,7 +96,9 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+"""""""""""""""""""""""""""""""""""""""""""
 " Following is the Karai original settings
+"""""""""""""""""""""""""""""""""""""""""""
 
 " Rebind <Leader> key
 let mapleader = ","
@@ -132,7 +129,7 @@ vnoremap > >gv  " better indentation
 "" mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 "" Now you can install any plugin into a .vim/bundle/plugin-name/ folder
-call pathogen#infect()
+"" call pathogen#infect()
 
 
 " Settings for vim-powerline
